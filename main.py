@@ -30,9 +30,9 @@ def db_createTables(cur):
       name varchar,
       price float
     );
-    INSERT INTO Product (name,price) Values ('Pomme',5)
-    INSERT INTO Product (name,price) Values ('Orange',6)
-    INSERT INTO Product (name,price) Values ('Poire',5)
+    INSERT INTO Product (name,price) Values ('Pomme',5);
+    INSERT INTO Product (name,price) Values ('Orange',6);
+    INSERT INTO Product (name,price) Values ('Poire',5);
     ''')
 
 
