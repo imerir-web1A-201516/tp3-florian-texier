@@ -83,7 +83,7 @@ def products_fetchall():
   resp.mimetype = 'application/json'
   return resp
 
-@app.route('/products') #sans mode == Get
+@app.route('/products')
 def products_fetchall():
   conn, cur = db_init()
   result = db_select(cur, 'SELECT pid, name FROM Product')
