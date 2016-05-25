@@ -64,7 +64,7 @@ def ini():
   return "Fait"
 
 @app.route('/products/<int:productId>')
-def desc_produit():
+def desc_produit(productId):
   conn, cur = db_init()
   result = db_select(cur, 'SELECT * FROM Product Where pid = productId')
   conn.close()
