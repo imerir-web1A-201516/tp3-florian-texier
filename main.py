@@ -74,7 +74,7 @@ def desc_produit(productId):
   return resp
 
 @app.route('/products', methods = ["POST"])
-def products_fetchall():
+def products_add():
   conn, cur = db_init()
   result = db_select(cur, 'SELECT pid, name FROM Product')
   conn.close()
